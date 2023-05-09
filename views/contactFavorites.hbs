@@ -1,0 +1,31 @@
+<div class="mainTableContactList">
+    <h1>Избранные контакты</h1>
+    {{#if contactFavoriteList.length}}
+    <div class="tableContactList"> 
+        <table>
+            <thead>
+                <tr>
+                    <th>Номер</th>
+                    <th>Ф.И.О</th>
+                    <th>Дата Рождения</th>
+                    <th>Действия</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each contactFavoriteList}}
+                <tr>
+                    <td>{{phone}}</td>
+                    <td>{{fio}}</td>
+                    <td>{{dob}}</td>
+                    <td class="tableContactFavoritesButton">                      
+                        <button data-idDeleteFavorite="{{id}}" class="deleteFavoritesContact">Удалить из избранных</button>
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    {{else}}
+    <h2 class="nonFavoritesh2">Избранных контактов нет</h2>
+    {{/if}}
+</div>

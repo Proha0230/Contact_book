@@ -1,0 +1,134 @@
+.navbarMain{
+    float: right;
+    width: 6rem;
+    margin-right: 0rem;
+    height: 100%;
+    display: flex;
+    border: solid;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.navbarButtonItem{
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;   
+}
+
+table{
+    text-align: center;
+    border-spacing: 2rem;
+    /* это свойство задает отступы между ячейками в таблице */
+}
+
+.tableContactList{
+    text-align: -webkit-center;
+}
+
+.mainTableContactList h1{
+    text-align: -webkit-center;
+    margin-bottom: 3rem;
+}
+
+.contactAddInputList{
+    display: table-caption;
+    text-align: center;
+}
+
+.formAddContactMain{
+    text-align: -webkit-center;
+}
+
+.addContactInputItem input{
+    width: 15rem;
+}
+
+.addContactInputItem{
+    margin: 1rem;
+}
+
+.addContactInputItem label{
+    font-weight: bold;
+}
+
+.tableContactButtonList button{
+    display: block;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.tableContactButtonList{
+    text-align: -webkit-center;
+}
+
+.tableContactFavoritesButton button{
+    display: block;
+    margin: 0.5rem;
+    border-radius: 10px;  
+}
+
+.createContactButton{
+    margin: 0.5rem;
+    border-radius: 10px;  
+}
+
+.navbarButtonItem.active{
+    background-color: black;
+    color: white;
+}
+
+.navbarButtonItem a{
+    color: black;
+    text-decoration: none
+}
+
+.contactInfoList{
+    text-align: -webkit-center;
+    display: grid;
+}
+
+.contactInfoList h2,h3 {
+    font-family: monospace;
+}
+
+.editContactInputItem{
+    display: table-caption;
+    text-align: center;
+    margin: 1rem;
+}
+
+.editContactForm{
+    text-align: -webkit-center;
+}
+
+.contactAddH1{
+    text-align: -webkit-center;
+}
+
+.nonFavoritesh2{
+    text-align: -webkit-center;
+}
+
+.deletebutton{
+    background-image: url(/garbage.png);
+    padding: 1.5rem;
+    background-repeat: round;
+}
+
+.addFavoriteButton{
+    background-image: url(/favorites.png);
+    padding: 1.5rem;
+    background-repeat: round;
+}
+
+.backButton{
+    background-image: url(/back.png);
+    padding: 1.5rem;
+    background-repeat: round;
+}
+
+.editButton{
+    background-image: url(/edit.png);
+    padding: 1.5rem;
+    background-repeat: round;
+}

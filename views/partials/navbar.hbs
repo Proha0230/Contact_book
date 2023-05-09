@@ -1,0 +1,40 @@
+<div class="navbarMain">
+    <div class="navbar">
+        <div class="navbarButtonList">
+
+        {{#if contactListActive}}
+        <form action="/" method="get">
+            <button class="navbarButtonItem active">Мои контакты</button>
+        </form> 
+        {{else}}
+        <form action="/" method="get">
+            <button class="navbarButtonItem">Мои контакты</button>
+        </form> 
+        {{/if}}
+
+        {{#if contactAdd}}
+        <form action="/add" method="get">
+            <button class="navbarButtonItem active">Добавить контакт</button>
+        </form> 
+        {{else}}
+        <form action="/add" method="get">
+            <button class="navbarButtonItem">Добавить контакт</button>
+        </form> 
+        {{/if}}
+
+        {{#if contactFavorites}}
+        <form action="/favorites" method="get">
+            <button class="navbarButtonItem active">Избранные контакты</button>
+        </form> 
+        {{else}}
+        <form action="/favorites" method="get">
+            <button class="navbarButtonItem">Избранные контакты</button>
+        </form> 
+        {{/if}}
+
+{{!-- такой конструкцией директивы {{#if}} мы проверяем есть ли передаваемый параметр в значении true, т.к. если в том роуте что используется
+на данный момент нет такой переменной передаваемой то он автоматически будет false т.к. undefined будет, а это false. И в таком случае
+используется блок {{else}} по окончанию ставим {{/if}} --}}
+        </div>
+    </div>
+</div>

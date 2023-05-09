@@ -1,0 +1,24 @@
+<div>
+    <form action="/editContact/:id" method="POST" class="editContactForm">
+
+        <div class="editContactInputItem">
+        <label id="phone">Номер телефона</label>
+        <input type="number" id="phone" name="phone" value="{{contact.phone}}">
+        </div>
+
+        <div class="editContactInputItem">
+        <label id="fio">Фамилия Имя Отчество</label>
+        <input type="text" id="fio" name="fio" value="{{contact.fio}}">
+        </div>
+
+        <div class="editContactInputItem">
+        <label id="dob">Дата Рождения</label>
+        <input type="number" id="dob" name="dob" value="{{contact.dob}}">
+        </div>
+
+
+        <input type="hidden" name="id" value="{{contact.id}}">
+
+        <button style="margin-right: 6.3rem;">Изменить</button>
+    </form>
+</div>

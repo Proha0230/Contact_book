@@ -1,0 +1,20 @@
+<h1 class="contactAddH1">Добавить контакт</h1>
+<form class="formAddContactMain" action="/add" method="POST">
+{{!-- в форме обязательно нужно указать метод формы в нашем случае это POST и его экшн т.е. по какому роуту он будет обрабатываться 
+в нашем случае это по адресу /add --}}
+    <div class="contactAddInputList">
+        <div class="addContactInputItem">
+            <label id="phone">Номер телефона</label>
+            <input id="phone" name="phone" type="number" required>
+        </div>
+        <div class="addContactInputItem">
+            <label id="fio">Ф.И.О</label>
+            <input id="fio" name="fio" type="text" required>
+        </div>
+        <div class="addContactInputItem">
+            <label id="dob">Дата Рождения</label>
+            <input id="dob" name="dob" type="number" required>
+        </div>
+    <button type="submit" class="createContactButton">Создать контакт</button>
+    </div>
+</form>

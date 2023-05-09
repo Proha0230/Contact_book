@@ -1,0 +1,27 @@
+<div class="contactInfoList">
+    <div>
+        <h3>Номер Телефона</h3>
+        <h2>{{contact.phone}}</h2>
+    </div>
+    <div>
+        <h3>Фамилия Имя Отчество</h3>
+        <h2>{{contact.fio}}</h2>
+    </div>
+    <div>
+        <h3>Дата Рождения</h3>
+        <h2>{{contact.dob}}</h2>
+    </div>
+    <div>
+        <button class="backButton"></button>
+        <button class="addFavoriteButton" data-idfavorite="{{contact.id}}"></button>
+        <button class="editButton" data-idedit="{{contact.id}}"></button>
+        
+        {{!-- <form action="/deleteContact/{{contact.id}}" method="post">
+            <button>Удалить контакт</button>
+        </form> --}}
+
+        {{!-- это для использования серверного node.js  --}}
+        <button data-id="{{contact.id}}" class="deletebutton"></button>
+        {{!-- а это для использования клиентского JS  --}}
+    </div>
+</div>
